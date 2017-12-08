@@ -22,7 +22,7 @@ export default (props) => {
     return(
         <div>
             <Sparklines width={180} height={120} data={props.data}>
-                <SparklinesBars style={{ stroke: 'white', fill: `${props.color}`, fillOpacity: '.25' }} />
+                <SparklinesBars style={{ stroke: `${props.color}`, fill: `${props.color}`, fillOpacity: '.25' }} />
                 <SparklinesLine style={{ stroke: `${props.color}`, fill: 'none' }} />
                 <SparklinesReferenceLine type='avg' />
             </Sparklines>
