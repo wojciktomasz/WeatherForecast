@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import SearchBar from '../containers/SearchBar'
-import WeatherList from '../containers/WeatherList'
-import Header from '../components/Header'
+import SearchBar from './containers/SearchBar'
+import WeatherList from './containers/WeatherList'
+import Header from './components/Header'
 
 class App extends Component {
     render() {

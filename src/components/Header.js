@@ -2,6 +2,7 @@
  * Created by Superstar on 08.12.2017.
  */
 import React from 'react'
+import '../App.css'
 
 const Header = () => {
     return (
