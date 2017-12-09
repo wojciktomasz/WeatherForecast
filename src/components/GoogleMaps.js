@@ -2,12 +2,15 @@
  * Created by Superstar on 08.12.2017.
  */
 import React from 'react'
-import { GoogleMap, withGoogleMap, withScriptjs } from 'react-google-maps'
 import GoogleMapReact from 'google-map-react'
 
 const GoogleMaps = (props) => {
     return (
-        <GoogleMapReact defaultZoom={12} defaultCenter={{lat: props.lat, lng: props.lon}} />
+        <GoogleMapReact
+            defaultZoom={12}
+            center={{lat: props.lat, lng: props.lon}}
+            bootstrapURLKeys={{key: 'AIzaSyBJa1Gqs0a9D8lISJtefwnWNAyh2FZp6xo'}}
+        />
     )
 }
 
