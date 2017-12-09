@@ -3,11 +3,12 @@
  */
 import React from 'react'
 import { GoogleMap, withGoogleMap, withScriptjs } from 'react-google-maps'
+import GoogleMapReact from 'google-map-react'
 
-const GoogleMaps = withGoogleMap((props) => {
+const GoogleMaps = (props) => {
     return (
-        <GoogleMap defaultZoom={12} defaultCenter={{lat: props.lat, lng: props.lon}} />
+        <GoogleMapReact defaultZoom={12} defaultCenter={{lat: props.lat, lng: props.lon}} />
     )
-})
+}
 
 export default GoogleMaps
